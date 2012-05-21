@@ -1,3 +1,9 @@
+WHAT IS THIS?
+=============
+
+This is a throwaway script to get all extensions to Mediawiki, check them out and merge them into one gigantic repo. 
+Don't get the purpose? Ask https://github.com/jeroendedauw
+
 This script depends on gitpython. Get it here: https://github.com/gitpython-developers/GitPython
 
 INSTALL GITPYTHON
