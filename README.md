@@ -12,7 +12,7 @@ INSTALL GITPYTHON
 If you have downloaded the source code:
 
   python setup.py install
-  
+
 or if you want to obtain a copy more easily: 
 
     easy_install gitpython
