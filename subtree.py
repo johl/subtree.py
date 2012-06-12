@@ -5,12 +5,16 @@ import shutil
 from git import Git, Repo
 
 try:
-  shutil.rmtree("extensions")
+  shutil.rmtree("Wikibase")
+  shutil.rmtree("WikidataClient")
+  shutil.rmtree("WikidataRepo")
+  shutil.rmtree("WikibaseLib")
 except Exception, e:
   pass
-print "Getting collection of extensions at https://gerrit.wikimedia.org/r/p/mediawiki/extensions.git"
-Git().clone("https://gerrit.wikimedia.org/r/p/mediawiki/extensions.git")
-repo = Repo('extensions')
+Git().clone("https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikidataClient.git")
+Git().clone("https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikidataRepo.git")
+Git().clone("https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikibaseLib.git")
+repo = Repo('WikidataClient')
 print str(len(repo.submodules)) + " submodules found. Merging..."
 print "Hold on. This may take some time"
 for module in repo.submodules:

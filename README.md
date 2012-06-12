@@ -1,9 +1,8 @@
 WHAT IS THIS?
 =============
 
-This is a throwaway script to get all extensions to Mediawiki, check them out and merge them into one gigantic repo. 
-Don't get the purpose? Ask https://github.com/jeroendedauw
-
+This is a throwaway script that was needed to squash all of the Wikibase
+extensions (WikidataClient, WikidataRepo, WikibaseLib) into one.
 This script depends on gitpython. Get it here: https://github.com/gitpython-developers/GitPython
 
 INSTALL GITPYTHON
